@@ -38,7 +38,7 @@ class ProductRepositoryTest {
     @Test
     public void shouldThrowNegativeIdException() {
         assertThrows(NotFoundException.class, () -> {
-            repository.removeById(7);
+            repository.removeById(8);
         });
     }
 }
